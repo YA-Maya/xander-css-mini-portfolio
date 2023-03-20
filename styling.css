@@ -34,6 +34,7 @@
 
   a{
     color: var(--teag);
+    transition: all 0.2s ease;
   }
 
   a:hover{
@@ -50,7 +51,12 @@
     font-size: 1rem;
     line-height: 1.5;
   }
+  #intro .name{
+    font-family: var(--mono);
+  }
 
   .name span{
     font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--glaucous);
   }
