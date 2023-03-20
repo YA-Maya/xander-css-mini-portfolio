@@ -60,3 +60,21 @@
     font-size: 4rem;
     color: var(--glaucous);
   }
+
+  /*Contact me*/
+  #contact{
+    background-color: #6184D8;
+    text-align: center;
+  }
+
+  #contact article{
+    width: 400px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  #contact article p:last-child{
+    margin-top: 3rem;
+  }
+  #contact article a{
+    color: var(--black);
+  }
