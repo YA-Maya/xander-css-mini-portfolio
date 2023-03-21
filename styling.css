@@ -24,7 +24,7 @@
     font-family: var(--sans);
     padding: 0;
     margin: 0;
-    background-color: var(--charcoal);
+    background-color: var(--oxfordb);
     color: var(--white);
     font-size: var(--font-size);
   }
@@ -41,10 +41,16 @@
     text-decoration: none;
     color: var(--lightgrey);
   }
-/*NavBar*/
-/*li{
-    list-style-type: none;
-}*/
+  .gradient {
+    background: linear-gradient(
+      90deg,
+      rgb(132, 247, 130) 0%,
+      rgb(227, 247, 247) 100%
+    );
+    height: 2px;
+  }
+/*Nav*/
+
 nav{
     font-family: var(--mono);
 }
@@ -71,20 +77,19 @@ nav{
 .navlinks li a {
     text-decoration: none;
     transition: color 0.4s ease;
-    color: var(--aqua);
+    color: var(--white);
     font-size: 1.15rem;
 }
 .navlinks li a:hover{
     color: var(--teag);
 }
 
-
-nav[class*="fa"] {
-    color: var(--aqua);
+nav [class*="fa"] {
+    color: var(--glaucous);
     font-size: 150%;
     transition: color 0.4s ease;
   }
-  nav[class*="fa"]:hover{
+  nav [class*="fa"]:hover{
     color: var(--teag);
   }
 
@@ -143,4 +148,39 @@ nav[class*="fa"] {
   }
   #contact article a{
     color: var(--black);
+  }
+/*Footer*/
+footer {
+    padding: 0.5rem 0;
+  }
+  
+  footer p,
+  footer p small {
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.675rem;
+  }
+  
+  footer p small {
+    font-size: 1rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 2rem;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+  }
+  
+  footer nav ul li a [class*="fa"] {
+    color: var(--white);
+    transition: all 0.4s ease;
+  }
+  
+  footer nav ul li a [class*="fa"]:hover {
+    color: var(--teag);
   }
