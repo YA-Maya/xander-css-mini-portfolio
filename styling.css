@@ -3,7 +3,7 @@
 :root {
     --black: #171321;
     --oxfordb: #2D3047;
-    --plum: #93B7BE;
+    --lightgrey: #93B7BE;
     --teag: #C2EABD;
     --charcoal: #465362;
     --glaucous: #6184D8;
@@ -39,7 +39,73 @@
 
   a:hover{
     text-decoration: none;
-    color: var(--plum);
+    color: var(--lightgrey);
+  }
+/*NavBar*/
+/*li{
+    list-style-type: none;
+}*/
+nav{
+    font-family: var(--mono);
+}
+
+.navlinks{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:2rem;
+
+}
+.navlinks li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+.navlinks li:first-child a {
+    font-family: var(--sans);
+    font-size: 1.75rem;
+}
+.navlinks li a {
+    text-decoration: none;
+    transition: color 0.4s ease;
+    color: var(--aqua);
+    font-size: 1.15rem;
+}
+.navlinks li a:hover{
+    color: var(--teag);
+}
+
+
+nav[class*="fa"] {
+    color: var(--aqua);
+    font-size: 150%;
+    transition: color 0.4s ease;
+  }
+  nav[class*="fa"]:hover{
+    color: var(--teag);
+  }
+
+.navlinks li a.call-to-action {
+    background-color: var(--teag);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  
+  .navlinks li a.call-to-action:hover {
+    background-color: var(--glaucous);
+    color: var(--white);
+  }
+
+@media screen and (min-width: 750px) {
+    .navlinks li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
   }
 
   /*Intro section*/
@@ -63,7 +129,7 @@
 
   /*Contact me*/
   #contact{
-    background-color: #6184D8;
+    background-color: var(--lightgrey);
     text-align: center;
   }
 
