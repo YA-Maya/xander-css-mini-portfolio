@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&display=swap");
+
+:root {
+    --black: #171321;
+    --oxfordb: #2D3047;
+    --lightgrey: #93B7BE;
+    --teag: #C2EABD;
+    --charcoal: #465362;
+    --glaucous: #6184D8;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+  }
+  html{
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
+  body{
+    font-family: var(--sans);
+    padding: 0;
+    margin: 0;
+    background-color: var(--oxfordb);
+    color: var(--white);
+    font-size: var(--font-size);
+  }
+  h1, h2, h3{
+    margin: 0;
+  }
+
+  a{
+    color: var(--teag);
+    transition: all 0.2s ease;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: var(--lightgrey);
+  }
+  .gradient {
+    background: linear-gradient(
+      90deg,
+      rgb(132, 247, 130) 0%,
+      rgb(227, 247, 247) 100%
+    );
+    height: 2px;
+  }
+/*Nav*/
+
+nav{
+    font-family: var(--mono);
+}
+
+.navlinks{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:2rem;
+
+}
+.navlinks li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+.navlinks li:first-child a {
+    font-family: var(--sans);
+    font-size: 1.75rem;
+}
+.navlinks li a {
+    text-decoration: none;
+    transition: color 0.4s ease;
+    color: var(--white);
+    font-size: 1.15rem;
+}
+.navlinks li a:hover{
+    color: var(--teag);
+}
+
+nav [class*="fa"] {
+    color: var(--glaucous);
+    font-size: 150%;
+    transition: color 0.4s ease;
+  }
+  nav [class*="fa"]:hover{
+    color: var(--teag);
+  }
+
+.navlinks li a.call-to-action {
+    background-color: var(--teag);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  
+  .navlinks li a.call-to-action:hover {
+    background-color: var(--glaucous);
+    color: var(--white);
+  }
+
+@media screen and (min-width: 750px) {
+    .navlinks li:first-child {
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
+
+  /*Intro section*/
+  #intro{
+   padding: 0 2rem 10rem 2rem;
+  }
+
+  #intro p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  #intro .name{
+    font-family: var(--mono);
+  }
+
+  .name span{
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--glaucous);
+  }
+
+  /*Contact me*/
+  #contact{
+    background-color: var(--lightgrey);
+    text-align: center;
+  }
+
+  #contact article{
+    width: 400px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  #contact article p:last-child{
+    margin-top: 3rem;
+  }
+  #contact article a{
+    color: var(--black);
+  }
+/*Footer*/
+footer {
+    padding: 0.5rem 0;
+  }
+  
+  footer p,
+  footer p small {
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.675rem;
+  }
+  
+  footer p small {
+    font-size: 1rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 2rem;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+  }
+  
+  footer nav ul li a [class*="fa"] {
+    color: var(--white);
+    transition: all 0.4s ease;
+  }
+  
+  footer nav ul li a [class*="fa"]:hover {
+    color: var(--teag);
+  }
